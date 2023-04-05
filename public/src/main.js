@@ -1,4 +1,4 @@
-export function startGame(params) {
+export function startGame(data) {
     !(function (t) {
         var e = {};
         function i(a) {
@@ -1402,7 +1402,7 @@ export function startGame(params) {
                 soundOn: r,
               }),
               n = function (t) {
-                return "./assets/".concat(t);
+                return data.concat(t);
               };
             s.addImg("background", n("background.png")),
               s.addImg("hook", n("hook.png")),
