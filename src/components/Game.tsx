@@ -17,12 +17,14 @@ type Props = {}
 
 const Game = (props: Props) => {
     const[scoreData,setScoreData]=useState<number>(0)
+    const[data,setData]=useState("./assets/")
+   
     useEffect(() => {
-        startGame()
+        startGame(data)
         Zepto()
         ScriptSorce(setScoreData)
     }, [])
-    console.log(scoreData);
+    console.log(data);
     return (
         <div>
             {/* {scoreData} */}
